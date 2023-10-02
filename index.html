@@ -14,6 +14,8 @@
       rel="stylesheet"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css" />
     <title>Tubagus Athalla</title>
   </head>
@@ -114,8 +116,8 @@
     <main class="main">
       <section class="section" id="tentangku">
         <div class="description">
-          <h2 id="judul">Tentang saya</h2>
-          <p id="deskripsi">
+          <h2 id="judul" data-aos="zoom-in">Tentang saya</h2>
+          <p id="deskripsi" data-aos="zoom-in">
             Halo Nama ku Adalah <span> Tubagus Athalla Nibras Islamy</span> Saya
             Tinggal Di Purwakarta. <br />
             Saya Lahir Di Cimahi Tanggal 18 September 2006. <br />
@@ -123,24 +125,33 @@
             <br />Saya Sekolah Di
           </p>
           <div class="image-school">
-            <div>
+            <div id="sd" data-aos="zoom-in-up"
+            data-aos-anchor="#tentangku"
+            data-aos-offset="500"
+            data-aos-duration="200">
               <p>SD</p>
               <img src="asset/sd.svg" alt="" srcset="" />
               <h4>SDPlus2 Almuhajirin</h4>
             </div>
-            <div>
+            <div  id="smp" data-aos="zoom-in-up"
+            data-aos-anchor="#tentangku"
+            data-aos-offset="500"
+            data-aos-duration="300">
               <p>SMP</p>
               <img src="asset/smp.svg" alt="" srcset="" />
               <h4>MTS Sabilunnajah Bandung</h4>
             </div>
-            <div>
+            <div  id="smk" data-aos="zoom-in-up"
+            data-aos-anchor="#tentangku"
+            data-aos-offset="500"
+            data-aos-duration="400">
               <p>SMK</p>
               <img src="asset/smk.svg" alt="" srcset="" />
               <h4>IDN Boarding School</h4>
             </div>
           </div>
 
-          <div class="ggl">
+          <div class="ggl"  data-aos="zoom-out">
             <p
               style="
                 padding: 0px 10px;
@@ -151,7 +162,7 @@
             >
               Choose Your Language
             </p>
-            <div id="google_element"></div>
+            <div id="google_element"  data-aos="zoom-in-up"></div>
 
             <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
@@ -168,7 +179,7 @@
         </div>
 
         <div class="profile-image">
-          <img src="asset/me.svg" alt="Foto Anda" />
+          <img src="asset/me.svg" alt="Foto saya"  data-aos="zoom-in"/>
         </div>
       </section>
     </main>
@@ -181,9 +192,12 @@
     </svg>
 
     <div class="experience" id="experience">
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <div class="experience-content">
+      <h2 data-aos="zoom-in">Experience</h2>
+      <div class="experience-item" >
+        <div class="experience-content" id="ex1" data-aos="zoom-in"
+        data-aos-anchor="#ngajar"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <h3>Mengajar Di Sekolah Al Ashr</h3>
           <p class="experience-date">11-Februari 2023</p>
           <p class="experience-description">
@@ -191,15 +205,24 @@
             temanya adalah Design seperti design UI/UX, atau design grafis dll.
           </p>
         </div>
-        <div class="experience-image">
-          <img src="asset/teach.jpg" alt="Teaching Assistant" />
+        <div class="experience-image"  data-aos="zoom-in"
+        data-aos-anchor="#experience"
+        data-aos-offset="500"
+        data-aos-duration="500">
+          <img src="asset/teach.jpg" alt="Teaching Assistant" id="ngajar"/>
         </div>
       </div>
-      <div class="experience-item reverse">
-        <div class="experience-image">
-          <img src="asset/event.JPG" alt="Event Participant" />
+      <div class="experience-item reverse" id="ex2">
+        <div class="experience-image" data-aos="zoom-in"
+        data-aos-anchor="#ex1"
+        data-aos-offset="500"
+        data-aos-duration="500">
+          <img src="asset/event.JPG" alt="Event Participant" id="eve"/>
         </div>
-        <div class="experience-content">
+        <div class="experience-content" id="te" data-aos="zoom-in"
+        data-aos-anchor="#eve"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <h3>Mengikuti Event GDG Bogor</h3>
           <p class="experience-date">02-Desember 2022</p>
           <p class="experience-description">
@@ -209,7 +232,10 @@
         </div>
       </div>
       <div class="experience-item">
-        <div class="experience-content">
+        <div class="experience-content" id="aa" data-aos="zoom-in"
+        data-aos-anchor="#web"
+        data-aos-offset="500"
+        data-aos-duration="600">
           <h3>Mendapatkan Setifikat</h3>
           <p class="experience-date">19-Oktober 2022</p>
           <p class="experience-description">
@@ -218,37 +244,73 @@
             cuma saya taro 1 saja untuk jadi gambaran
           </p>
         </div>
-        <div class="experience-image">
-          <img src="asset/web.png" alt="Teaching Assistant" />
+        <div class="experience-image" data-aos="zoom-in"
+        data-aos-anchor="#te"
+        data-aos-offset="500"
+        data-aos-duration="600">
+          <img src="asset/web.png" alt="Teaching Assistant" id="web"/>
+        </div>
+        
+      </div>
+      <div class="experience-item reverse">
+        <div class="experience-image" data-aos="zoom-in"
+        data-aos-anchor="#aa"
+        data-aos-offset="500"
+        data-aos-duration="500">
+          <img src="asset/Screenshot 2023-10-02 093836.png" alt="Event Participant" id="dd"/>
+        </div>
+        <div class="experience-content" id="te" data-aos="zoom-in"
+        data-aos-anchor="#dd"
+        data-aos-offset="500"
+        data-aos-duration="500">
+          <h3>Meraih Medali Emas</h3>
+          <p class="experience-date">unknown</p>
+          <p class="experience-description">
+            Saya telah berhasil meraih medali emas setingkat Nasional
+            dalam kompetisi noSec.
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="apaja">
+    <div class="apaja" id="apaaja">
       <div class="skills" id="skill">
-        <h2>My Skills</h2>
-        <div class="skill">
+        <h2 data-aos="zoom-in">My Skills</h2>
+        <div class="skill" id="bar1" data-aos="zoom-in"
+        data-aos-anchor="#apaaja"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <div class="skill-name">HTML</div>
           <div class="skill-bar">
             <div class="skill-per" per="90%" style="max-width: 90%"></div>
           </div>
+          
         </div>
 
-        <div class="skill">
+        <div class="skill" id="bar2" data-aos="zoom-in"
+        data-aos-anchor="#bar1"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <div class="skill-name">CSS</div>
           <div class="skill-bar">
             <div class="skill-per" per="80%" style="max-width: 70%"></div>
           </div>
         </div>
 
-        <div class="skill">
+        <div class="skill" id="bar3" data-aos="zoom-in"
+        data-aos-anchor="#bar2"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <div class="skill-name">Design</div>
           <div class="skill-bar">
             <div class="skill-per" per="65%" style="max-width: 70%"></div>
           </div>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-aos="zoom-in"
+        data-aos-anchor="#bar3"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <div class="skill-name">Back End</div>
           <div class="skill-bar">
             <div class="skill-per" per="60%" style="max-width: 60%"></div>
@@ -260,7 +322,10 @@
     <div class="my-projects" id="proyek">
       <h2>My Projects</h2>
       <div class="project">
-        <div class="project-content">
+        <div class="project-content" id="pro1" data-aos="zoom-in"
+        data-aos-anchor="#proyek1"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <h3>Futurix</h3>
           <p>
             Jadi Ini adalah Website perusahaan buatan saya Yang Bernama Futurix
@@ -268,14 +333,24 @@
           <a href="https://futurixweb.netlify.app/">Visit Web</a>
         </div>
         <div class="project-image">
-          <img src="asset/ftrx.png" alt="Project 1" />
+          <img src="asset/ftrx.png" alt="Project 1" id="proyek1" data-aos="zoom-in"
+          data-aos-anchor="#proyek"
+          data-aos-offset="500"
+          data-aos-duration="500"/>
         </div>
       </div>
       <div class="project reverse">
         <div class="project-image">
-          <img src="asset/ecolif.png" alt="Project 2" />
+          <img src="asset/ecolif.png" alt="Project 2" id="proyek2" data-aos="zoom-in"
+          data-aos-anchor="#pro1"
+          data-aos-offset="500"
+          data-aos-duration="500"/>
         </div>
-        <div class="project-content">
+
+        <div class="project-content" id="pro2" data-aos="zoom-in"
+        data-aos-anchor="#proyek2"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <h3>EcoLife</h3>
           <p>
             Jadi Ini adalah Website kesehatan buatan saya Yang Bernama ecolife
@@ -284,7 +359,10 @@
         </div>
       </div>
       <div class="project">
-        <div class="project-content">
+        <div class="project-content" data-aos="zoom-in"
+        data-aos-anchor="#proyek3"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <h3>NatureWonderId</h3>
           <p>
             Jadi Ini adalah Website Lestari buatan saya Yang Bernama
@@ -292,7 +370,10 @@
           </p>
           <a href="https://naturewonderid.netlify.app/">Visit Web</a>
         </div>
-        <div class="project-image">
+        <div class="project-image" id="proyek3" data-aos="zoom-in"
+        data-aos-anchor="#pro2"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <img src="asset/ntr.png" alt="Project 1" />
         </div>
       </div>
@@ -399,5 +480,10 @@
   </div>
 
     <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

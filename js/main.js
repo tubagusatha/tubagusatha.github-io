@@ -32,3 +32,12 @@ const showMenu = (toggleId, navId) =>{
 
 
  
+ const navbar = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    navbar.classList.add("navscroll");
+  } else {
+    navbar.classList.remove("navscroll");
+  }
+});

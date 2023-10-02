@@ -80,8 +80,13 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff4f;
+  background: #60cdf8;
+  transition: background-color 0.4s ease;
   z-index: var(--z-fixed);
+}
+
+.header.navscroll {
+  background: transparent;
 }
 
 /*=============== NAV ===============*/
